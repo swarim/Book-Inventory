@@ -1,0 +1,140 @@
+/* src/pages/Inventory/Inventory.css */
+.inventory {
+  padding: 20px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Container for the search, filter, and export button */
+.controls-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Export button alignment */
+.export-buttons {
+  display: flex;
+  justify-content: flex-end; /* Align the export button to the right */
+}
+
+/* Row for search and filter */
+.search-filter-bar {
+  display: flex;
+  justify-content: space-between; /* Space out search and filter */
+  align-items: center;
+  gap: 15px;
+}
+
+/* Search input styling */
+.search-input {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Filter dropdown styling */
+.filter-dropdown {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.filter-dropdown:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.filter-input {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  flex: 2;
+}
+
+.filter-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Book cards styling */
+.book-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .controls-container {
+    flex-direction: column; /* Stack export button and search-filter-bar vertically */
+    align-items: flex-start; /* Align items to the start */
+    gap: 15px;
+  }
+
+  .export-buttons {
+    width: 100%;
+    justify-content: flex-end; /* Keep the export button on the right */
+  }
+
+  .search-filter-bar {
+    flex-direction: column; /* Stack search and filter vertically */
+    gap: 10px;
+    width: 100%;
+  }
+
+  .search-input, .filter-input, .filter-dropdown {
+    width: 100%; /* Make inputs take full width */
+  }
+}
