@@ -3,8 +3,11 @@
 
 This project is a web application for managing a book inventory. It includes a **Django backend** for API management and a **React frontend** for a user-friendly interface. The system allows users to add, edit, delete, filter and search for books in the inventory.
 
+## Demo Video
 
 https://github.com/user-attachments/assets/3e139239-2363-425c-aacd-f6bce94ab3e9
+
+## Documentation Word File:
 
 [Book_Inventory_Documentation.docx](https://github.com/user-attachments/files/17608645/Book_Inventory_Documentation.docx)
 
