@@ -6,6 +6,8 @@ This project is a web application for managing a book inventory. It includes a *
 
 https://github.com/user-attachments/assets/3e139239-2363-425c-aacd-f6bce94ab3e9
 
+[Book_Inventory_Documentation.docx](https://github.com/user-attachments/files/17608645/Book_Inventory_Documentation.docx)
+
 
 ---
 
